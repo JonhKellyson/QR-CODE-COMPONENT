@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --fonte1: "Outfit", sans-serif;
+    --corfundo: hsl(212, 45%, 89%);
+    --corbranca: hsl(0, 0%, 100%);
+    --corclara: hsl(219, 16%, 46%);
+    --corescura: hsl(218, 44%, 22%);
+}
+
+body {
+    background: var(--corfundo);
+}
+
+/*Card*/
+
+.card {
+    display: block;
+    margin: 200px auto;
+    padding: 10px;
+    width: 200px;
+    background-color: var(--corbranca);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0,1);
+}
+
+/*Textos*/
+
+h2 {
+    text-align: center;
+    color: var(--corescura);
+    font-family: var(--fonte1);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: var(--corclara);
+    font-family: var(--fonte1);
+    font-size: 12px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/*Footer*/
+
+.attribution {
+    text-align: end;
+    padding-top: 2px;
+}
+
+.attribution a {
+    color: black;
+}
+
+
+
+/*MOBILE*/
+
+@media (max-width: 420px) {
+    .card {
+        display: block;
+        margin: 134px auto;
+    }
+
+    .attribution {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .card {
+        display: block;
+        margin: 170px auto;
+    }
+
+    .attribution {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+}
+
+/*PC 1440*/
+
+@media (width: 1440px) {
+    .card {
+        display: block;
+        margin: 140px auto;
+    }
+
+    .attribution {
+        text-align: end;
+        padding-bottom: 0px;
+    }
+}
